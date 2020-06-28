@@ -5,7 +5,7 @@
 <div class="container">
   <div class="row">
     <div class="col">
-      <h1>Hello, {{$nama}}</h1>          
+      <h4>Hello, {{$nama}}</h4>          
     </div>
   </div>
 </div>

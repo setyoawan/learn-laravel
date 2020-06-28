@@ -28,7 +28,7 @@
                 <td>{{$mhs->email}}</td>            
                 <td>{{$mhs->jurusan}}</td>            
                 <td>
-                    <a href="" class="btn btn-sm btn-success">edit</a>
+                    <a href="" class="btn btn-sm btn-warning">edit</a>
                     <a href="" class="btn btn-sm btn-danger">hapus</a>
                 </td>                    
             </tr>
