@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\DB;
-use App\Student; //load model student
+
+//load model student
+use App\Student; 
 
 class MahasiswaController extends Controller
 {

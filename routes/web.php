@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+// bisa
 // Route::get('/', function () {
 //     return view('index');
 // });
@@ -22,7 +22,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('about', ['nama' => $nama]);
 // });
 
-
+// load controller dari route
 Route::get('/', 'PagesController@home');
 Route::get('/about', 'PagesController@about');
 Route::get('/mahasiswa', 'MahasiswaController@index');
