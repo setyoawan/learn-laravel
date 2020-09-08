@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\DB;
 
 //load model student
-use App\Student; 
+use App\Mahasiswa;
 
 class MahasiswaController extends Controller
 {
@@ -18,9 +18,12 @@ class MahasiswaController extends Controller
      */
     public function index()
     {
-        // $mahasiswa = DB::table('students')->get(); bisa        
+        // query builder (tanpa model)
+        // $mahasiswa = DB::table('students')->get(); bisa
+
+        // class model (akses ilokwen orm: Object Relational Mapping)
         // $mahasiswa = \App\Student::all(); bisa
-        $mahasiswa = Student::all();
+        $mahasiswa = Mahasiswa::all();
         return view('mahasiswa/index', ['mahasiswa' => $mahasiswa]);
     }
 

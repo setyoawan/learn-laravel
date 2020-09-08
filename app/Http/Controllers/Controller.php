@@ -17,3 +17,6 @@ class Controller extends BaseController
 
 // controller untuk mengelola data (CRUD) 
 // php artisan make:controller NamaController --resource
+
+// membuat controller bersamaan dengan model 
+// php artisan make:controller NamaController -r -m NamaModel

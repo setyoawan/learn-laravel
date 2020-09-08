@@ -3,12 +3,10 @@
 
 @section('container')
 <div class="container">
-  <div class="row">
+  <div class="row mt-4">
     <div class="col">
-      <h4>Hello, {{$nama}}</h4>          
+      <h4>Hello, {{$nama}}</h4>
     </div>
   </div>
 </div>
 @endsection
-
-    

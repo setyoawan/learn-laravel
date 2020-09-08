@@ -22,7 +22,18 @@ use Illuminate\Support\Facades\Route;
 //     return view('about', ['nama' => $nama]);
 // });
 
-// load controller dari route
+// load controller dari route. NamaController@namaMethod
 Route::get('/', 'PagesController@home');
 Route::get('/about', 'PagesController@about');
 Route::get('/mahasiswa', 'MahasiswaController@index');
+
+// students
+Route::get('/students', 'StudentsController@index');
+
+Route::get('/students/create', 'StudentsController@create');
+
+// id student {student}
+Route::get('/students/{student}', 'StudentsController@show');
+
+// create data dengan method post
+Route::post('/students', 'StudentsController@store');

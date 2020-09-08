@@ -6,9 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Student extends Model
 {
-    // ketika tabelnya gak default (gak sesuai dengan model yang dibuat dan migration tabelnya)
-    // contoh selain table students dan model Student 
-    // maka ditambah :
-    // protected $table = 'mahasiswa';
-    //
+    // menambah properti pretected $fillable menandakan yang dipilih adalah field yang kita set untuk diisi
+
+    protected $fillable = ['nama', 'nrp', 'email', 'jurusan'];
+
+    // $guarded menandakan yang dipilih adalah field yang tidak boleh diisi
 }

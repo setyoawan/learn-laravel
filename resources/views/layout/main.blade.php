@@ -21,18 +21,13 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <!-- semacam base url{{ url('/') }}  -->
-                        <a class="nav-link" href="{{ url('/') }}">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/about') }}">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/mahasiswa') }}">Mahasiswa</a>
-                    </li>
-                </ul>
+                <div class="navbar-nav ml-auto">
+                    <!-- semacam base url{{ url('/') }}  -->
+                    <a class="nav-item nav-link active" href="{{ url('/') }}">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="{{ url('/about') }}">About</a>
+                    <a class="nav-item nav-link" href="{{ url('/mahasiswa') }}">Mahasiswa</a>
+                    <a class="nav-item nav-link" href="{{ url('/students') }}">Students</a>
+                </div>
             </div>
         </div>
     </nav>
