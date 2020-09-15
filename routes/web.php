@@ -28,12 +28,25 @@ Route::get('/about', 'PagesController@about');
 Route::get('/mahasiswa', 'MahasiswaController@index');
 
 // students
-Route::get('/students', 'StudentsController@index');
+// Route::get('/students', 'StudentsController@index');
 
-Route::get('/students/create', 'StudentsController@create');
+// // create untuk nampilin form 
+// Route::get('/students/create', 'StudentsController@create');
 
-// id student {student}
-Route::get('/students/{student}', 'StudentsController@show');
+// // id student == {student}
+// Route::get('/students/{student}', 'StudentsController@show');
 
-// create data dengan method post
-Route::post('/students', 'StudentsController@store');
+// // create data dengan method post, store untuk mengubah data 
+// Route::post('/students', 'StudentsController@store');
+
+// // delete data dengan method delete
+// Route::delete('/students/{student}', 'StudentsController@destroy');
+
+// // edit data, klik tombol itu get. edit untuk nampilin form
+// Route::get('/students/{student}/edit', 'StudentsController@edit');
+
+// // update untuk mengubah data
+// Route::patch('/students/{student}', 'StudentsController@update');
+
+// setelah di cek di reaource, php artisan route:list maka dapat diganti dengan:
+Route::resource('students', 'StudentsController');
